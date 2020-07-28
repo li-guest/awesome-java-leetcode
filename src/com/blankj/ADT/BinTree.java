@@ -37,7 +37,7 @@ public class BinTree {
         preOrderRecursion(p.right);
     }
 
-    public void preOrder_iteration_1(BinNode p) {
+    public void preOrder_iteration_1(BinNode p) throws Exception {
         if (p == null) {
             return ;
         }
@@ -60,7 +60,7 @@ public class BinTree {
         System.out.println(p.data);
     }
 
-    public void perOrder_iteration_2(BinNode p) {
+    public void perOrder_iteration_2(BinNode p) throws Exception {
         Stack stack = new Stack();
         while (true) {
             visitAlongLeftBranch(p, stack);
@@ -86,7 +86,7 @@ public class BinTree {
         inOrderRecursion(p.right);
     }
 
-    public void inOrdeIteration_1(BinNode p) {
+    public void inOrdeIteration_1(BinNode p) throws Exception {
         Stack stack = new Stack();
         while (true) {
             goAlongLeftBranch(p, stack);
@@ -104,7 +104,7 @@ public class BinTree {
         }
     }
 
-    public void postOrder(BinNode p) {
+    public void postOrder(BinNode p) throws Exception {
         if (p == null)
             return ;
         Stack stack = new Stack();
